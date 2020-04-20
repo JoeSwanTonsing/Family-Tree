@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'lily_script_oneregular';
+    src: url('../res/fonts/Lily_Script_One/lilyscriptone-regular-webfont.woff2') format('woff2'),
+         url('../res/fonts/Lily_Script_One/lilyscriptone-regular-webfont.woff') format('woff'),
+         url('../res/fonts/Lily_Script_One/LilyScriptOne-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,171 @@
+@import url("fonts.css");
+
+.primary_color{
+  color: #2e8b57;
+}
+
+.secondary_color{
+  color: #5d5959;
+}
+
+html{
+  background-color: #343a40!important;
+}
+
+body{
+  background-color: #fff!important;
+  background-image: url('../res/img/bg2_opa3.png');
+  background-repeat: repeat;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f5f5f5;
+}
+
+.myfooter{
+  margin-top: 1rem;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  /*background-color: #f5f5f5;*/
+}
+
+.footer_img{
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.nav_logo{
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 1rem; 
+}
+
+.nav-app-name{
+  font-family: 'lily_script_oneregular';
+}
+
+.mycard{
+  margin: auto;
+  max-width: 50%;
+  margin-top: 1rem;
+  margin-bottom:1rem;
+  border: 2px solid #eaeaea;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+@media only screen and (max-width: 700px) {
+  .mycard {
+    max-width: 100%;
+  }
+}
+
+.intro-image{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.mylist-unstyled{
+  list-style: none;
+  padding: 0px;
+}
+
+.moretext{
+  margin-top: 1rem;
+}
+
+.marbotnone{
+  margin-bottom: 0px;
+}
+
+.getstartedbtn{
+  background-color: #2e8b57;
+  color: #fff;
+  padding: 7px 1rem;
+  border: 1px solid #2e8b57;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.getstartedbtn:hover{
+  text-decoration: none;
+  color: #2e8b57;
+  background-color: #fff;
+}
+.credit-list li{
+  margin-top: 1rem;
+}
+
+.credit_img{
+  height: 50px;
+  width: 50px;
+  object-position: center;
+  object-fit: cover;
+}
+
+.list-inline{
+  display: inline;
+}
+
+.get_social{
+
+}
+
+.mfa {
+  padding: 1rem;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+.mfa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  color: #3B5998;
+}
+
+.fa-twitter {
+  color: #55ACEE;
+}
+
+.fa-github {
+  color: #24292e;
+}
+
+.fa-linkedin {
+  color: #007bb5;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-instagram {
+  color: #5d5959;
+}
+
+.fa-pinterest {
+  color: #cb2027;
+}
+
+.help{
+  color: #5d5959;
+}

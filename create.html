@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="res/ico/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="res/ico/favicon.ico" type="image/x-icon">
+
+  <title>My Family Tree</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="css/general.css" rel="stylesheet">
+  <script src="orgchart/my_org.js"></script>
+  <style type="text/css">
+    html, body
+    {
+      height: 100vh;
+    }
+    .fawarningicon{
+      font-size: 3rem;
+    }
+    g text{
+      font-family: 'lily_script_oneregular';
+    }
+    #orgchart{
+      height: 85vh!important;
+    }
+
+    .btn{
+      width: 100%;
+    }
+
+    /*.onsmall{
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .onsmall {
+        display: block;
+      }
+      .offsmall{
+        display: none;
+      }
+    }*/
+  </style>
+  
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <div class="navbar-brand nav-app-name"><img src="res/img/header.svg" class="nav_logo" >My Family Tree</div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="create.html">Create <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="help.html">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container" style="padding-top:4rem; ">
+    <div class="row offsmall">
+      <div style="width:100%; height:auto;" id="orgchart"></div>
+    </div>
+
+    <!-- <div class="row onsmall">
+      <div class="col-12">
+        <p class="text-center fawarningicon text-danger"><i class="fas fa-exclamation-circle"></i></p>
+        <p> Phones are currently not supported as it causes inconvenience due to their small screens. Please switch to a tablet or a larger device.</p>
+        <br>
+        <p>Working on bringing it to the mobile platform as well. Stay tuned for updates.</p>
+      </div>
+    </div> -->
+  </div>
+
+  <div class="myfooter">
+    <div class="text-center">
+      <span class="text-muted"><img src="res/img/peace.svg" class="footer_img"> &nbsp; Suan Tonsing
+        <span id="copyright"><script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>
+      </span>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script scr="orgchart/morgtheme.js"></script>
+
+  <script>
+      function pdf(nodeId) {
+          chart.exportPDF({filename: "MyFamilyTree.pdf", expandChildren: true, nodeId: nodeId});
+      }
+      function png(nodeId) {
+          chart.exportPNG({filename: "MyFamilyTree.png", expandChildren: true, nodeId: nodeId});
+      }
+      // function svg(nodeId) {
+      //     chart.exportSVG({filename: "MyFamilyTree.svg", expandChildren: true, nodeId: nodeId});
+      // }
+
+      var chart = new OrgChart(document.getElementById("orgchart"), {
+        mouseScrool: OrgChart.action.none,
+        template: "diva",
+        enableDragDrop: true,
+        // showYScroll: OrgChart.scroll.visible,
+        // showXScroll: OrgChart.scroll.visible,
+        // scaleInitial: OrgChart.match.height,
+        dragDropMenu: {
+          addInGroup: { text: "Add in group" },
+          addAsChild: { text: "Add as child" }
+        },
+        menu: {
+          export_pdf: {
+              text: "Export PDF",
+              icon: OrgChart.icon.pdf(24, 24, "#7A7A7A"),
+              onClick: pdf
+          },
+          export_png: {
+              text: "Export PNG",
+              icon: OrgChart.icon.png(24, 24, "#7A7A7A"),
+              onClick: png
+          },
+          // export_svg: {
+          //     text: "Export SVG",
+          //     icon: OrgChart.icon.svg(24, 24, "#7A7A7A"),
+          //     onClick: svg
+          // }
+        },
+        nodeMenu: {
+          // details: { text: "Details" },
+          edit: { text: "Edit", icon: OrgChart.icon.edit(18, 18, '#039BE5')  },
+          add: { text: "Add Child", icon: OrgChart.icon.add(18, 18, '#FF8304') },
+          remove: { text: "Remove", icon: OrgChart.icon.remove(18, 18, '#FF8304') }
+        },
+        nodeContextMenu: {
+          edit: { text: "Edit", icon: OrgChart.icon.edit(18, 18, '#039BE5')  },
+          add: { text: "Add Child", icon: OrgChart.icon.add(18, 18, '#FF8304') },
+          remove: { text: "Remove", icon: OrgChart.icon.remove(18, 18, '#FF8304') }
+        },
+        nodeBinding: {
+            field_0: "name",
+            // field_1: "title",
+            img_0: "img"
+        },
+        nodes: [
+          { id: 1, name: "Family Name", title: "", img: "https://cdn.balkan.app/shared/empty-img-blue.svg" },
+        ]
+      }); 
+      </script>
+</body>
+
+</html>

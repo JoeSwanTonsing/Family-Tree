@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="res/ico/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="res/ico/favicon.ico" type="image/x-icon">
+
+  <title>My Family Tree</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="css/general.css" rel="stylesheet">
+  
+  <style type="text/css">
+    .help{
+      max-width: 80%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .help {
+        max-width: 100%;
+      }
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <div class="navbar-brand nav-app-name"><img src="res/img/header.svg" class="nav_logo" >My Family Tree</div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="create.html">Create</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="help.html">Help <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top: 4rem;">
+
+    <div class="row text-center">
+      <div class="col-12">
+        <div class="mycard">
+          <img src="res/img/header.svg" class="intro-image">
+          <h1 class="mt-5 nav-app-name primary_color">My Family Tree</h1>
+          <h4 style="margin-top: 2rem;">Help</h4>
+          <ul class="mylist-unstyled">
+            <li>
+              <a href="#gettingstarted">Getting Started</a>
+            </li>
+
+            <li>
+              <a href="#menu">Menus</a>
+            </li>
+
+            <li>
+              <a href="#details">Details</a>
+            </li>
+
+            <li>
+              <a href="#addmember">Add Member</a>
+            </li>
+            <li>
+              <a href="#navigating">Navigating</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Help Doc -->
+    <div class="row">
+      <!-- Getting Started -->
+      <div class="col-12" id="gettingstarted">
+        <div class="mycard help">
+          <div class="gs">
+            <h4>Getting Started</h4>
+            <p class="secondary_color"> To get started, click on the <b>"Get Started"</b> button at the home page, or the <b>"Create"</b> link in the navgation bar</p>
+            <div class="help_img_container text-center">
+              <img src="res/help_files/gs1.png" class="help_img img-thumbnail"><br>
+              <h4 class="secondary_color text-center">OR</h4>
+              <img src="res/help_files/gs2.png" class="help_img img-thumbnail">
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu -->
+      <div class="col-12" id="menu">
+        <div class="mycard help">
+          <div class="ac">
+            <h4>Menus</h4>
+            <p class="secondary_color">There are three <b><i>Menus</i></b></p>
+            <div class="help_img_container text-center">
+              <img src="res/help_files/menu.png" class="help_img img-thumbnail">
+            </div>
+            <br>
+            <p class="secondary_color"> 1. Use the Menu numbered 1 to open up options to export your tree. Currently, you can export tree as <b><i>"PDF"</i></b> or as a <b><i>"PNG"</i></b> file. <i>More export options will be added.</i> </p>
+            <p class="secondary_color"> 2. Use the Menu numbered 2 to open up options for a particular tree node - member(Parent/Child). Use this menu to <strong>Edit</strong>, <strong>Add</strong> or <strong>Remove</strong> a member.</p>
+            <p class="secondary_color">3. Menu numbered 3 is a context menu and is accessible only through right-click button of the mouse and may not be accessible to all devices. The context menu consists of the same menu items as that in menu 2.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Details -->
+      <div class="col-12" id="details">
+        <div class="mycard help">
+          <div class="ed">
+            <h4>Details</h4>
+            <p class="secondary_color">You can easily view or edit the details of a member</p>
+            <p class="secondary_color">To <i>view</i> the details of a member, click/tap anywhere on the member's card. This will bring up the details of the member.</p>
+            <p class="secondary_color">To <i>edit</i> the details of a member, click on the menu (<img src="res/help_files/ssmmenu.png" style="width: 30px; height: 15px; object-position: center;object-fit: contain;">) within the member's card and select the "Edit" option. This will bring up the details of the member in an editable form.<br> As of now, user can only edit the <strong>Name</strong> attribute. All other fields will be in working condition soon.</p>
+            <p class="secondary_color">Finally, to save the changes, click on the arrow (<img src="res/help_files/arrow.png" style="width: 30px; height: 15px; object-position: center;object-fit: contain;">) at the top right corner. Your member node should update automatically.</p>
+            <div class="help_img_container text-center">
+              <img src="res/help_files/edit.jpg" class="help_img img-thumbnail">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Member -->
+      <div class="col-12" id="addmember">
+        <div class="mycard help">
+          <div class="adm">
+            <h4>Add Member</h4>
+            <p class="secondary_color">To add a member of the family, use the "Add Child" option from the node menu.</p>
+            <p class="secondary_color">If member is the first generation, on the node of "Family Name" add the first member. For any other generation, adding a child node automatically makes the new child node as the child of that node.</p>
+            <div class="help_img_container text-center">
+              <img src="res/help_files/addmember.gif" class="help_img img-thumbnail">
+            </div>
+            <br>
+            <h5>Adding Spouse</h5>
+            <p class="secondary_color">Since a spouse is not a direct child of the parent, you can't add it as a child node from the parent node. To add a spouse, goto the node whose spouse you want to add. Click on the node options and select the "Add Child" option. Then on the generated child node, "Edit" the child node - Enter the details and on the bottom, Select the "Spouse" option. This option differentiates the Spose node from the ordinary child nodes.</p>
+            <div class="help_img_container text-center">
+              <img src="res/help_files/AddSpouse.gif" class="help_img img-thumbnail">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="col-12" id="navigating">
+        <div class="mycard help">
+          <div class="nvg">
+            <h4>Navigating</h4>
+            <p class="secondary_color">When the tree gets too big, it doesnt fit in the whole screen. To navigate through the tree, click and hold on any empty area of the tree (outside the nodes) and drag in ay direction.</p>
+            <div class="help_img_container text-center">
+              <img src="res/help_files/navigate.gif" class="help_img img-thumbnail">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <!-- <div class="row text-center">
+      <div class="col-12">
+        <div class="mycard">
+          <h4>Contributors</h4>
+          <p></p>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+
+  <div class="myfooter">
+    <div class="text-center">
+      <span class="text-muted"><img src="res/img/peace.svg" class="footer_img"> &nbsp; Suan Tonsing
+        <span id="copyright"><script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>
+      </span>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
