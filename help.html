@@ -5,7 +5,6 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="shortcut icon" href="res/ico/favicon.ico" type="image/x-icon">
@@ -89,6 +88,9 @@
               <a href="#navigating">Navigating</a>
             </li>
           </ul>
+          <h5 class="text-danger">Important note: Project still doesn't support database. So whatever changes you do does not get saved. Once you're done with the tree, export as PDF to save it locally.</h5>
+          <hr>
+            <p class="secondary_color"><i><strong>Pro tip:</strong> Please try to use a device with larger display - tablet or a laptop. Although it is possible to create trees in smaller devices, due to the screen limitation, tree creation &amp; viewing get inconvenient.</i></p>
         </div>
       </div>
     </div>
@@ -102,7 +104,7 @@
             <h4>Getting Started</h4>
             <p class="secondary_color"> To get started, click on the <b>"Get Started"</b> button at the home page, or the <b>"Create"</b> link in the navgation bar</p>
             <div class="help_img_container text-center">
-              <img src="res/help_files/gs1.png" class="help_img img-thumbnail"><br>
+              <img src="res/help_files/gs1.png" class="help_img img-thumbnail"><br><br>
               <h4 class="secondary_color text-center">OR</h4>
               <img src="res/help_files/gs2.png" class="help_img img-thumbnail">
             </div>
@@ -155,10 +157,19 @@
               <img src="res/help_files/addmember.gif" class="help_img img-thumbnail">
             </div>
             <br>
+            <hr>
+            <br>
             <h5>Adding Spouse</h5>
-            <p class="secondary_color">Since a spouse is not a direct child of the parent, you can't add it as a child node from the parent node. To add a spouse, goto the node whose spouse you want to add. Click on the node options and select the "Add Child" option. Then on the generated child node, "Edit" the child node - Enter the details and on the bottom, Select the "Spouse" option. This option differentiates the Spose node from the ordinary child nodes.</p>
+            <p class="secondary_color">You can add spouse in two ways: 1. Explicitly Specifying when creating a child node, or 2. Grouping the two spouse nodes together.</p>
+            <br>
+            <p class="secondary_color"><strong><u>Method 1:</u></strong> To add a spouse, goto the node whose spouse you want to add. Click on the node options and select the "Add Child" option. Then on the generated child node, "Edit" the child node - Enter the details and on the bottom, Select the "Spouse" option. This option differentiates the Spouse node from the ordinary child nodes.<br> <strong>If using this method, do not create a child node using the spose node.</strong></p>
             <div class="help_img_container text-center">
               <img src="res/help_files/AddSpouse.gif" class="help_img img-thumbnail">
+            </div>
+            <br>
+            <p class="secondary_color"><strong><u>Method 2:</u></strong> <i>The more user friendly and quicker way to add spouse.</i> To add a spouse using the second method, go to the parent node, add both child node and the spouse node. Now, Click/Tap and holding on the spouse node, drag it over to the associated node and release hold. It asks whether to "Add to Group" ot "Add to Child", Select "Add to Group".<br><strong>Unlike in Method 1, here both nodes in the grouping can create child nodes.</strong></p>
+            <div class="help_img_container text-center">
+              <img src="res/help_files/AddSpouse2.gif" class="help_img img-thumbnail">
             </div>
           </div>
         </div>
